@@ -6,4 +6,4 @@ title: "About me"
 
 PhD Student – Wildlife & Fisheries Science, Department of Ecosystem Science & Management, The Pennsylvania State University
 
-When I procrastinate I usually take on a coding challenge beyond my scope - which includes making this website. So if you are reading this there is more to come but this is as far as I got... so far. :)
+When I procrastinate I usually take on a coding challenge beyond my scope - which includes making this website. So if you are reading this there is more to come but this is as far as I got... for now. :)
