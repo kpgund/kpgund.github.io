@@ -2,6 +2,14 @@
 title: "About me"
 ---
 
-## Header
+## Katie Gundermann
 
-Say more about you here.
+PhD Student – Wildlife & Fisheries Science, Department of Ecosystem Science & Management, The Pennsylvania State University
+
+I am interested in applying appropriate statistical methods to help further our understanding and inform management of a wide variety of species. I am passionate about x, y, and z. 
+
+In summer of 2022 I earned my M.Sc. at The Pennsylvania State University where I developed hierarchical Bayesian models to further our understanding of how ungulate space-use and movement changed in response to reproductive status and hunting pressure. Prior to my M.Sc. I obtained my B.Sc. from the University of Delaware in 2017. From summer of 2017 – 2020 I worked as a wildlife research technician on a variety of projects.  
+
+For my Ph.D. research, I am continuing my work with the Buderman Lab and establishing new partnerships with the Pennsylvania Game Commission to detect changes in low-density and elusive species of greatest conservation need in PA. This work includes Barn owls, bats, and marsh birds, oh my! 
+
+In my free time I love crafting, enjoying craft beer, and spending time in the outdoors. 
