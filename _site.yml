@@ -13,6 +13,9 @@ navbar:
     - text: "CV"
       icon: fa-file-pdf-o
       href: cv.html
+    - text: "Ernie"
+      icon: fa-file-pdf-o
+      href: Ernie2.html
   right:
     - text: "Contact me"
       icon: fa-envelope-o
