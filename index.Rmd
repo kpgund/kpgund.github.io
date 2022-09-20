@@ -2,24 +2,35 @@
 title: "Welcome to my website!"
 ---
 
+```{css,echo=FALSE}
+h1, h2, h3 {
+  text-align:center;
+}
+p {
+  font-size: 18px;
+}
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+td{
+  font-size: 24px;
+  vertical-align: middle;
+}
+```
 
-\begin{multicols}{2}
-
-  \null \vfill
-  \includegraphics[width=.3\textwidth]{photos/kpgund_backpackingPNG.png}
-  \vfill \null
-
-\columnbreak
-
-  \null \vfill
-  \begin{itemize}
-    \item Katie Gundermann
-    \item **PhD Student** – *Wildlife & Fisheries Science*, Department of Ecosystem Science & Management, The Pennsylvania State University
-  \end{itemize}
-  \vfill \null
-\end{multicols}
+ |      
+-: | :-: 
+![ ](photos/kpgund_backpackingPNG.png){width=80%} | Katie Gundermann, MSc, [AWB](https://wildlife.org/learn/professional-development-certification/certification-programs/) \
+**Ph.D. Student**, *Wildlife and Fisheries Sciences*, Department of Ecosystem Science and Management, The Pennsylvania State University
 
 
-### Research interests
+
+# Research interests
 I am interested in bridging basic and applied wildlife sciences to help managers make informed decisions on wildlife of interest with limited knowledge or data.
 For my PhD research, I am continuing my workw ith the Buderman Lab and establishing new partnerships within the Pennsylvania Game Commission. I will be working with the PGC to detect changes in low-density and elusive species of greatest conservation need in Pennsylvania. This work will focus on Barn owls, bats, and marsh birds, oh my!
+
+# Find me at.. 
+ | |     
+:-: | :-: | :-:
+[Buderman Lab](https://fbuderman.net/) | [Google Scholar](https://scholar.google.com/citations?hl=en&user=C-XyyTYAAAAJ&view_op=list_works&gmla=AJsN-F7JDyCeDfHQY1_JhEsYCBmO1dksu8PVMim_TbJJqhgEl2jxAqnEEhmR5HsmrPi9uIhIsOQTqo5J-5QB6YP_EIJ-qGfBsAlT8GySTbbIBKcbjbBqVCc) | [Twitter](https://twitter.com/kpgund)
