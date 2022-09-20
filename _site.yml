@@ -1,7 +1,7 @@
 name: "Katie Gundermann"                                # CHANGE HERE
 output_dir: "."
 navbar:
-  title: "KATIE GUNDERRMANN"                             # CHANGE HERE
+  title: "Katie Gundermann"                             # CHANGE HERE
   type: inverse
   left:
     - text: "Home"
@@ -14,7 +14,7 @@ navbar:
       icon: fa-file-pdf-o
       href: cv.html
     - text: "Ernie"
-      icon: fa-heart
+      icon: fa-file-pdf-o
       href: Ernie2.html
   right:
     - text: "Contact me"
@@ -27,4 +27,3 @@ output:
   html_document:
     theme: cosmo
     highlight: textmate
-    mainfont: optima
