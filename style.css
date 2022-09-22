@@ -65,7 +65,7 @@ Righthand side content on large screens */
     margin-bottom: 2em;
     /* liner gradient tints the image darker for readability*/
     background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(photos/hero_image.jpeg);
-    height: 400px;
+    height: auto;
     background-size: cover;
     background-color: #141c25f2;
     background-position: center center;
@@ -96,7 +96,6 @@ Righthand side content on large screens */
   letter-spacing: 0.065em;
   line-height: 0.5em;
   font-size: 2vw;
-  text-transform: uppercase;
   text-align: left;
   display: block; /* Change to `display: none` for no bottom text */
   color: #ffffff;
