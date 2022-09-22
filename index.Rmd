@@ -1,5 +1,5 @@
 ---
-title: "Welcome to my website!"
+title: " "
 ---
 
 ```{css,echo=FALSE}
@@ -29,7 +29,7 @@ td{
 
 # Research interests
 I am interested in bridging basic and applied wildlife sciences to help managers make informed decisions on wildlife of interest with limited knowledge or data.
-For my PhD research, I am continuing my workw ith the Buderman Lab and establishing new partnerships within the Pennsylvania Game Commission. I will be working with the PGC to detect changes in low-density and elusive species of greatest conservation need in Pennsylvania. This work will focus on Barn owls, bats, and marsh birds, oh my!
+For my PhD research, I am continuing my work with the Buderman Lab and establishing new partnerships within the Pennsylvania Game Commission. I will be working with the PGC to detect changes in low-density and elusive species of greatest conservation need in Pennsylvania. This work will focus on Barn owls, bats, and marsh birds, oh my!
 
 # Find me at.. 
  | |     

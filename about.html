@@ -13,10 +13,10 @@
 
 <title>A little more about me</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
-<script src="site_libs/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/readable.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -30,8 +30,6 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
-<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -44,16 +42,7 @@
   ul.task-list{list-style: none;}
     </style>
 
-<style type="text/css">code{white-space: pre;}</style>
-<script type="text/javascript">
-if (window.hljs) {
-  hljs.configure({languages: []});
-  hljs.initHighlightingOnLoad();
-  if (document.readyState && document.readyState === "complete") {
-    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
-  }
-}
-</script>
+
 
 
 
@@ -82,6 +71,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -139,11 +131,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -234,7 +230,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -257,30 +253,32 @@ $(document).ready(function () {
     About
   </a>
 </li>
-<li>
-  <a href="cv.html">
-    <span class="fa fa-file-pdf-o"></span>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-gear"></span>
      
-    CV
-  </a>
-</li>
-<li>
-  <a href="Ernie2.html">
-    <span class="fa fa-heart"></span>
+    More
      
-    Ernie
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li class="dropdown-header">Professional</li>
+    <li>
+      <a href="cv.html">CV</a>
+    </li>
+    <li>
+      <a href="mailto:kpgund@psu.edu">Contact me</a>
+    </li>
+    <li class="divider"></li>
+    <li class="dropdown-header">Still pretty professional</li>
+    <li>
+      <a href="Ernie2.html">Ernie</a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:kpgund@psu.edu">
-    <span class="fa fa-envelope-o"></span>
-     
-    Contact me
-  </a>
-</li>
-<li>
   <a href="https://github.com/kpgund">
     <span class="fa fa-github"></span>
      
@@ -313,20 +311,18 @@ img[src*='#center'] {
     margin: auto;
 }
 </style>
-<div id="background" class="section level1">
-<h1>Background</h1>
 <p>In the summer of 2022, I earned my MSc in Wildife and Fisheries
 Science from Penn State. My research focused on furthering our
 understanding of how ungulates in central Pennsylvania shifted their
 movement patterns in reponse to changes in reproductive status and
 hunting pressure. During my MSc I developed a deep love for R and a
 special relationship for statistics, summed up best by Facebook’s most
-notorias relationship status.<br />
+notorios relationship status.<br />
 <img src="photos/itcomplicated.png#center" style="width:50.0%" /><br />
 <br />
-Prior to my MSc I obtained my BSc from the University of Delaware in
-2017 and from 2017-2020 I wokred as a wildlife research technician on a
-variety of projects, with a focus on non-invasive surveying on
+Prior to my MSc work, I obtained my BSc from the University of Delaware
+in 2017 and from 2017-2020 I worked as a wildlife research technician on
+a variety of projects, with a focus on non-invasive surveying on
 mesocarnivores.</p>
 <div id="multi-species-mesocarnivore-monitoring-project"
 class="section level3">
@@ -386,12 +382,10 @@ class="section level3">
 </tbody>
 </table>
 </div>
-</div>
 <div id="additionally" class="section level1">
 <h1>Additionally</h1>
 <p>In my free time I love crafting, enjoying craft beer, adventuring in
-the outdoors, and spending time with my cat, Ernie. [insert photo of
-Ernie]</p>
+the outdoors, and spending time with my cat, Ernie.</p>
 <p>When I procrastinate I usually take on a coding challenge beyond my
 scope - which includes making this website. So if you are reading this
 there is more to come but this is as far as I got… for now. :)</p>

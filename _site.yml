@@ -10,21 +10,24 @@ navbar:
     - text: "About"
       icon: fa-user
       href: about.html
-    - text: "CV"
-      icon: fa-file-pdf-o
-      href: cv.html
-    - text: "Ernie"
-      icon: fa-heart
-      href: Ernie2.html
-  right:
-    - text: "Contact me"
-      icon: fa-envelope-o
-      href: mailto:kpgund@psu.edu                    # CHANGE HERE
+    - text: "More"
+      icon: fa-gear
+      menu:
+        - text: "Professional"
+        - text: "CV"
+          href: CV.pdf
+        - text: "Contact me"
+          href: mailto:kpgund@psu.edu
+        - text: "--------"
+        - text: "Still pretty professional"
+        - text: "Ernie"
+          href: Ernie2.html
+  right:                  # CHANGE HERE
     - text: "GitHub"
       icon: fa-github
       href: https://github.com/kpgund      # CHANGE HERE
 output:
   html_document:
-    theme: cosmo
-    highlight: textmate
+    theme: readable
+    highlight: tango
     mainfont: optima

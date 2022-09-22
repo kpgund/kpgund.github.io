@@ -1,8 +1,9 @@
 ---
-title: "Ernie"
+title: "The many faces of Ernie Benernie Gundermann"
 output: html_document
 ---
 ```{css,echo=FALSE}
+
 h1, h2, h3 {
   text-align:center;
 }
@@ -19,14 +20,19 @@ img[src*='#center'] {
     <!-- And finally, for center alignment, add two colons, like: :---: -->
 ```
 
-# The many faces of Ernie Benernie Gundermann
-
-  |      
-:-: | :-: 
-![Ernie Does Yoga](photos/ernie7.png){width=50%} | !["Ernie Is A Model"](photos/ernie6.png){width=50%}
-![Ernie Tried (and Failed) Coding](photos/ernie5.png){width=50%} | ![Ernie Hanging Out](photos/ernie1.png){width=50%}
 
 
+<!--   |       -->
+<!-- :-: | :-:  -->
+<!-- ![Ernie Does Yoga](photos/ernie7.png){width=50%} | !["Ernie Is A Model"](photos/ernie6.png){width=50%} -->
+<!-- ![Ernie Tried (and Failed) Coding](photos/ernie5.png){width=50%} | ![Ernie Hanging Out](photos/ernie1.png){width=50%} -->
+
+
+```{r, echo = FALSE, out.width="30%"}
+library(knitr)
+myimages<-list.files("photos/Ernie", pattern = ".png", full.names = TRUE)
+include_graphics(myimages)
+```
 
 
 
