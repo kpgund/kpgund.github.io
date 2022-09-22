@@ -13,21 +13,33 @@ navbar:
     - text: "More"
       icon: fa-gear
       menu:
-        - text: "Professional"
+        - text: "More Info"
         - text: "CV"
           href: CV.pdf
         - text: "Contact me"
           href: mailto:kpgund@psu.edu
         - text: "--------"
-        - text: "Still pretty professional"
+        - text: "Cats!"
         - text: "Ernie"
           href: Ernie2.html
+        - text: "--------"
+        - text: "Find me at"
+        - text: "Twitter"
+          href: https://twitter.com/kpgund
+        - text: "Buderman Lab"
+          href: https://fbuderman.net/
+        - text: "Google Scholar"
+          href: https://scholar.google.com/citations?hl=en&user=C-XyyTYAAAAJ&view_op=list_works&gmla=AJsN-F7JDyCeDfHQY1_JhEsYCBmO1dksu8PVMim_TbJJqhgEl2jxAqnEEhmR5HsmrPi9uIhIsOQTqo5J-5QB6YP_EIJ-qGfBsAlT8GySTbbIBKcbjbBqVCc
+
   right:                  # CHANGE HERE
     - text: "GitHub"
       icon: fa-github
       href: https://github.com/kpgund      # CHANGE HERE
 output:
   html_document:
-    theme: readable
-    highlight: tango
-    mainfont: optima
+      includes:
+      css: style.css
+      theme: readable
+      highlight: tango
+      toc: false
+      toc_float: false

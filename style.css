@@ -1,0 +1,104 @@
+/*----------------COLORS OF LINKS-------------*/
+a {
+  color: #5ebccf;
+}
+
+a:hover {
+ color: #50a0b0; /* darker color when hovering */
+}
+
+/*----------------ADDING WHITE SPACE-------------*/
+
+.title {
+  margin-top: 2em !important;
+  margin-bottom: 0.75em;
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+  padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  margin-bottom: 0.75em;
+}
+
+/* Space Between TOC and
+Righthand side content on large screens */
+
+@media (min-width: 992px) {
+  .col-md-9 {
+    width: 75%;
+    padding-left: 5em !important;
+  }
+}
+
+/*----------LOGO above TOC---------*/
+
+#TOC::before {
+  content: "";
+  display: block;
+  height: 200px;
+  margin: 2em 20px 40px 20px;
+  background-image: url("photos/kpgund_circle.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* .upper-right-logo {
+  margin-top: 20px;
+  background-image: url("photos/kpgund_circle.png");
+  height: 150px;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}*/
+
+/* -----------HERO IMAGE AT TOP OF PAGE -----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.hero-image {
+
+    position: relative;
+    margin-bottom: 2em;
+    /* liner gradient tints the image darker for readability*/
+    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(photos/hero_image.jpeg);
+    height: 400px;
+    background-size: cover;
+    background-color: #141c25f2;
+    background-position: center center;
+    display: flex; /* Change to `display: none` for no hero image */
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.top-text {
+  position: relative;
+  margin-top:265px;
+  margin-left: 7px;
+  font-size: 5vw;
+  padding-bottom: 1em
+  text-transform: uppercase;
+  text-align: left;
+  display: block; /* Change to `display: none` for no top text */
+  color: #ffffff72;
+  font-weight: bold;
+}
+
+.bottom-text {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  position: relative;
+  margin-left: 7px;
+  letter-spacing: 0.065em;
+  line-height: 0.5em;
+  font-size: 2vw;
+  text-transform: uppercase;
+  text-align: left;
+  display: block; /* Change to `display: none` for no bottom text */
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
