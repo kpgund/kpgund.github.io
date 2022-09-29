@@ -1,5 +1,5 @@
 /*----------------COLORS OF LINKS-------------*/
-a {
+a:active {
   color: #5ebccf;
 }
 
@@ -100,4 +100,222 @@ Righthand side content on large screens */
   display: block; /* Change to `display: none` for no bottom text */
   color: #ffffff;
   margin-bottom: 2.5rem;
+}
+
+/* -----------HERO IMAGE AT TOP OF PAGE -----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.hero-image-Research {
+
+    position: relative;
+    margin-bottom: 2em;
+    /* liner gradient tints the image darker for readability*/
+    background-image: linear-gradient( rgba(0,0,0,.2), rgba(0,0,0,.2) ), url(photos/hero_image.jpeg);
+    height: auto;
+    background-size: cover;
+    background-color: #141c25f2;
+    background-position: center center;
+    display: flex; /* Change to `display: none` for no hero image */
+    justify-content: flex-start;
+    align-items: left;
+}
+
+.top-text {
+  position: relative;
+  margin-top:265px;
+  margin-left: 7px;
+  font-size: 5vw;
+  padding-bottom: 1em
+  text-transform: uppercase;
+  text-align: left;
+  display: block; /* Change to `display: none` for no top text */
+  color: #ffffff72;
+  font-weight: bold;
+}
+
+.bottom-text {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  position: relative;
+  margin-left: 7px;
+  letter-spacing: 0.065em;
+  line-height: 0.5em;
+  font-size: 2vw;
+  text-align: left;
+  display: none; /* Change to `display: none` for no bottom text */
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+}
+
+/* -----------WORDS SWIPING OVER IMAGE-----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.container1 {
+  position: relative;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container1:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* -----------WORDS SWIPING OVER IMAGE-----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container2:hover .overlay {
+  opacity: 0.85;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/* -----------Trying to Create a Table----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.tabl {
+  height:auto;
+  width:auto/9;
+  border:1px;
+  display:table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  height:auto;
+  display:table-row
+}
+.cell {
+  border:1px;
+  display:table-cell;
+  height: auto;
+  width: auto\9;
+}
+
+
+.img[src*='#tabl'] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* -----------Trying to Create a Table----------*/
+
+/* LARGE HERO IMAGE AT TOP OF PAGE*/
+
+.gallery {
+  border: 1px solid #ccc;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
