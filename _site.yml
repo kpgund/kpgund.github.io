@@ -9,7 +9,7 @@ navbar:
       href: index.html
     - text: "About"
       icon: fa-user
-      href: tech_work_descript.html
+      href: about.html
     - text: "More"
       icon: fa-gear
       menu:
