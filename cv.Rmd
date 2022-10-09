@@ -1,9 +1,0 @@
----
-title: "CV"
----
-
-<a href="CV.pdf#" class="download" title="Download CV as PDF">Download CV</a>			
-
-## I will get to this eventually too...
-
-I've worked all over the country. I don't have a CV to prove it just yet, but I swear.

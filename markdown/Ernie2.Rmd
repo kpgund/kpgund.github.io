@@ -1,0 +1,41 @@
+---
+title: "The many faces of Ernie Benernie Gundermann"
+output: html_document
+---
+```{css,echo=FALSE}
+
+h1, h2, h3 {
+  text-align:center;
+}
+p {
+  font-size: 24px;
+}
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+
+    <!-- To align left, add a colon to the left, like :--- (this is the default) -->
+    <!-- For right alignment, add a colon to the right, like: ---: -->
+    <!-- And finally, for center alignment, add two colons, like: :---: -->
+```
+
+
+
+<!--   |       -->
+<!-- :-: | :-:  -->
+<!-- ![Ernie Does Yoga](photos/ernie7.png){width=50%} | !["Ernie Is A Model"](photos/ernie6.png){width=50%} -->
+<!-- ![Ernie Tried (and Failed) Coding](photos/ernie5.png){width=50%} | ![Ernie Hanging Out](photos/ernie1.png){width=50%} -->
+
+
+```{r, echo = FALSE, out.width="30%"}
+library(knitr)
+myimages<-list.files("photos/Ernie", pattern = ".png", full.names = TRUE)
+include_graphics(myimages)
+```
+
+
+
+
+
+
