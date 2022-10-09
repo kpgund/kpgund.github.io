@@ -24,7 +24,6 @@ td{
   vertical-align: middle;
 }
 ```
-
  |
 -: | :-:
 ![ ](photos/kpgund_circle.png) | Katie Gundermann, MSc, [AWB](https://wildlife.org/learn/professional-development-certification/certification-programs/) \
