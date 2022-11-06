@@ -1,9 +1,0 @@
----
-title: "&nbsp;"
-output:
-  html_document:
-    includes:
-      before_body: TAC_indexPlayAround.html
----
-
-## checkthis out
