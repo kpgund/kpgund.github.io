@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV to Table Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <h1>Recent Publications</h1>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+				<th>Year</th>
+				<th>Journal</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+
+    <script>
+        Papa.parse("data.csv", {
+            download: true,
+            dynamicTyping: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+                const tableBody = document.getElementById("table-body");
+                results.data.forEach((row) => {
+                    const author = row.Author;
+                    const title = row.Title;
+					const year = row.Year;
+					const journal = row.Journal;
+                    const newRow = document.createElement("tr");
+                    newRow.innerHTML = `<td>${author}</td><td>${title}</td><td>${year}</td><td>${journal}</td>`;
+                    tableBody.appendChild(newRow);
+                });
+            },
+        });
+    </script>
+</body>
+</html>
+

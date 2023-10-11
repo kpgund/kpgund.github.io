@@ -16,6 +16,10 @@ p {
   line-height: 24px;
 }
 
+a:hover i {
+  transform: scale(1.5);
+}
+
 .page-content {
   width: 77.5%;
   float: right;
@@ -63,6 +67,12 @@ p {
   color: #343434;
   position: absolute;
   top: 12.5px;
+}
+
+.section-heading p em {
+  font-style: normal;
+  font-weight: 500;
+  color: #457e9a;
 }
 
 .white-button a {
@@ -759,13 +769,13 @@ header {
 
 /* Blog Style */
 
-#blog {
+#pubs {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#pubs .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -775,7 +785,7 @@ header {
   border-bottom: 10px solid #457e9a;
 }
 
-#blog .tabs li {
+#pubs .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -784,7 +794,7 @@ header {
   padding: 0;
 }
 
-#blog .tabs a {
+#pubs .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -797,16 +807,16 @@ header {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#pubs .tabs a:hover {
   color: #457e9a;
 }
 
 
-#blog .tabs .active:hover {
+#pubs .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#pubs .tabs .active {
   background-color: #457e9a;
   color: #fff;
 }
@@ -822,13 +832,13 @@ header {
   clear:both;
 }
 
-#blog .tabgroup ul {
+#pubs .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#pubs .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -836,23 +846,23 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#pubs .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#pubs .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#pubs .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#pubs .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -862,7 +872,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#pubs .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -871,13 +881,38 @@ header {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#pubs .item .text-content .accent-button {
   margin-top: 25px;
 }
 
+/* TABLE STYLE */
+table {
+  font-size:15px;
+  border-collapse: collapse;
+  border-spacing: 75px 0;
+}
 
+td {
+  padding: 10px 0;
+  /* background: #ccc; /* Remove this line to disable grey background color */
+  vertical-align: center;
+}
 
+th {
+  display: none;
+  border-bottom: 2px solid #ddd;
+  height: 0px;
+  text-align: center;
+}
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #457e9a;
+  color: #ffffff
+}
 /* Contact Style */
 
 #contact {
