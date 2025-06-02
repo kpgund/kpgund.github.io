@@ -27,6 +27,7 @@ https://templatemo.com/tm-518-sentra
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     </head>
 
 <body>
@@ -46,6 +47,7 @@ https://templatemo.com/tm-518-sentra
                     <ul class="nav navbar-nav">
                         <li><a href="#top">Home</a></li>
                         <li><a href="#featured">Featured Research</a></li>
+                        <li><a href="#pubs">Recent Publications</a></li>
                         <li><a href="#contact">Find Me At</a></li>
                     </ul>
                 </nav>
@@ -70,6 +72,13 @@ https://templatemo.com/tm-518-sentra
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Featured Research
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pubs">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Recent Publications
                         </a>
                     </li>
                     <li>
@@ -99,7 +108,7 @@ https://templatemo.com/tm-518-sentra
                           <h1>Katie Gundermann <br>MSc, AWB</h1>
                           <p>PhD Student, <dfn>Wildlife and Fisheries Sciences</dfn> 
                             <br>Department of Ecosystem Science and Management
-							<br><strong>The Pennyslyvania State University</strong></p>
+							<br><strong>The Pennsylvania State University</strong></p>
                         </div>
                         </div>
                     </div>
@@ -111,8 +120,8 @@ https://templatemo.com/tm-518-sentra
                         <div class="image"></div>
                         <div class="info">
                         <div>
-                          <h1>PhD Research</h1>
-                          <p>I will be developting methods to detect changes 
+                          <h1>Ph.D. Research</h1>
+                          <p>I will be developing methods to detect changes 
                             <br>in low-density and elusive species of greatest conservation need 
                             <br>in Pennsylvania. This work will focus on barn owls, bats, and marsh birds</p>
                         </div>
@@ -138,6 +147,8 @@ https://templatemo.com/tm-518-sentra
         </div>
 
 
+
+
         <div class="page-content">
             <section id="featured" class="content-section">
                 <div class="section-heading">
@@ -146,153 +157,85 @@ https://templatemo.com/tm-518-sentra
                     <br>to wildlife ecology.</p>
                 </div>
                 <div class="section-content">
-                    <div class="owl-carousel owl-theme">
-                        <!-- Item -->
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_1.jpg" alt="">
-                            </div>
-                            <div class="text-content">
-                                <h4>A change is gonna come; using change-point models to identify parturition events 
-                                </h4>
-                                <span><strong>Kathleen P. Gundermann</strong>, Diefenbach, D.R., Walter, W.D., 
-                                    Corondi, A.C., Rosenberry, C.R., Banfield, J.E. & Buderman, F.E.</span>
-                                <p>I developed two change-point models for identifying singular changes 
-                                    in movement behavior: a location-based
-                                    and a movement metric-based model. 
-                                    I applied these models to two ungulate species, 
-                                    white-tailed deer (<dfn>Odocoileus virginianus</dfn>) and 
-                                    elk (<dfn>Cervus canadensis</dfn>) in central Pennsylvania 
-                                    with the goal of identifying parturition events. 
-                                    Previous research and anecdotal evidence suggest that these two 
-                                    species exhibit different location- and movement-based changes during parturition.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- // Item -->
-                        <!-- Item -->
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_2.png" alt="">
-                            </div>
-                            <div class="text-content">
-                                <h4>Anthropogenic source of predation and how movement behaviors change
-                                    over the course of a hunting season </h4>
-                                    <span><strong>Kathleen P. Gundermann</strong>, Diefenbach, D.R., Wallingford, B.D., 
-                                    Stainbrook, D.P., Rosenberry, C.R., & Buderman, F.E.</span>
-                                <p>Predator activity can alter behavior of prey species, as prey must balance habitat benefits with predation risk. 
-                                In the eastern U.S., recreational hunting is the primary source of mortality for white-tailed deer 
-                                (<dfn>Odocoileus virginianus</dfn>). Hunting, like predation, can modify how deer perceive the risks and 
-                                rewards of a landscape, which can change their space-use and movement behavior. 
-                                We developed two Bayesian state-switching hidden Markov-models, one describing location-based changes 
-                                and another describing movement-metric based changes. 
-                                Our results indicate that hunting season may not be a driving factor influencing 
-                                the transition between behavioral states in most individuals. Humans may not be identified as a 
-                                replacement predator by deer and increased human presence might not precipitate behavioral shifts.</p>
-                            </div>
-                        </div>
-                        <!-- // Item -->
-                        <!-- Item -->
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_3.jpg" alt="">
-                            </div>
-                            <div class="text-content">
-                                <h4>Ecological characteristics of diurnal rest sites used by ringtails </h4>
-                                <span><strong>Kathleen P. Gundermann</strong>, Green, D.S., Buderman, F.E., 
-                                    Myers, C., Higley, J.M., Brown, R., & Matthews, S.M.</span>
-                                <p>The ringtail (<dfn>Bassariscus astutus</dfn>) is a species of conservation concern. 
-                                    Yet, little is known about their basic ecology in the northwestern edge of their range. 
-                                    Understanding the forest conditions associated with rest sites selected by ringtails can 
-                                    inform forest management practices. We found that ringtails were more 
-                                    likely to select rest sites in mature older forests compared to oak 
-                                    woodland and open areas and were less likely to select rest sites closer to perennial water sources. 
-                                    We did not detect an effect of fishers on the selection of rest sites. 
-                                    These results indicate that both late- and some early-seral forest conditions provide 
-                                    suitable habitat for ringtail rest sites and ultimately demonstrate that ringtails use a 
-                                    mosaic of seral stages in the forests of the Pacific Northwest. </p>
-                            </div>
-                        </div>
-                        <!-- // Item -->
-                        <!-- <div class="item">
-                            <div class="image">
-                                <img src="img/featured_2.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
+                    <!-- Featured Research Slider Section -->
+                    <div class="research-slider">
+                        <div class="Modern-Slider content-section" id="featured-research">
+                            <!-- Research Item 1 -->
+                            <div class="item research-item-1">
+                                <div class="img-fill">
+                                    <div class="image"></div>
+                                    <div class="info">
+                                        <div>
+                                            <h1>Change-point models for detecting behavioral transitions in wild animals</h1>
+                                            <span class="author">Kathleen P. Gundermann, D.R. Diefenbach, W.D. Walter, A.M. Corondi, J.E. Banfield, B.D. Wallingford, D.P. Stainbrook, C.R. Rosenberry, & F.E. Buderman</span>
+                                            <p>I developed two change-point models for identifying singular changes in movement behavior: a location-based and a movement metric-based model. I applied these models to two ungulate species, white-tailed deer (Odocoileus virginianus) and elk (Cervus canadensis) in central Pennsylvania with the goal of identifying parturition events. Previous research and anecdotal evidence suggest that these two species exhibit different location- and movement-based changes during parturition.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text-content">
-                                <h4>In volutpat augue lectus</h4>
-                                <span>Elementum</span>
-                                <p>#4 Aliquam mollis lacus eget metus efficitur lobortis. Suspendisse libero lacus, accumsan vitae commodo tristique, luctus gravida metus.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_1.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
+                            
+                            <!-- Research Item 2 -->
+                            <div class="item research-item-2">
+                                <div class="img-fill">
+                                    <div class="image"></div>
+                                    <div class="info">
+                                        <div>
+                                            <h1>Anthropogenic source of predation and movement behaviors during hunting season</h1>
+                                            <span class="author">Kathleen P. Gundermann, D.R. Diefenbach, B.D. Wallingford, D.P. Stainbrook, C.R. Rosenberry, & F.E. Buderman</span>
+                                            <p>Predator activity can alter behavior of prey species, as prey must balance habitat benefits with predation risk. In the eastern U.S., recreational hunting is the primary source of mortality for white-tailed deer (Odocoileus virginianus). We developed two Bayesian state-switching hidden Markov-models to examine how hunting season affects deer behavior. Our results indicate that hunting season may not be a driving factor influencing behavioral state transitions in most individuals.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text-content">
-                                <h4>Cras commodo odio</h4>
-                                <span>Aliquam</span>
-                                <p>#5 Mauris lacinia pretium libero, ut tincidunt lacus molestie ornare. Phasellus a facilisis erat. Praesent eleifend nibh mauris, quis sodales lorem convallis pulvinar.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_3.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
+                            
+                            <!-- Research Item 3 -->
+                            <div class="item research-item-3">
+                                <div class="img-fill">
+                                    <div class="image"></div>
+                                    <div class="info">
+                                        <div>
+                                            <h1>Ecological characteristics of diurnal rest sites used by ringtails</h1>
+                                            <span class="author">Kathleen P. Gundermann, D.S. Green, F.E. Buderman, C. Myers, J.M. Higley, R. Brown, & S.M. Matthews</span>
+                                            <p>The ringtail (Bassariscus astutus) is a species of conservation concern. Yet, little is known about their basic ecology in the northwestern edge of their range. We found that ringtails were more likely to select rest sites in mature older forests compared to oak woodland and open areas. These results demonstrate that ringtails use a mosaic of seral stages in the forests of the Pacific Northwest.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text-content">
-                                <h4>Sed at massa turpis</h4>
-                                <span>Curabitur</span>
-                                <p>#6 Vestibulum tincidunt ornare ligula vel molestie. Curabitur hendrerit mauris mollis ipsum vulputate rutrum. Phasellus luctus odio eget dui imperdiet.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_2.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
+                            
+                            <!-- Research Item 4 -->
+                            <div class="item research-item-4">
+                                <div class="img-fill">
+                                    <div class="image"></div>
+                                    <div class="info">
+                                        <div>
+                                            <h1>Using supplemental data sources to estimate occupancy of secretive marsh birds</h1>
+                                            <span class="author">Kathleen P. Gundermann, S. Murphy, C. Lutz, L. Williams, F.E. Buderman</span>
+                                            <p>Understanding distributions and habitat associations of species of conservation concern is critical for making appropriate management recommendations. However, some species, such as marsh birds, are difficult to monitor due to their secretive nature. Our objective is to compare the effect of supplemental data sources on the precision of site-level occupancy estimates using a multi-species, integrated data occupancy model in a Bayesian framework.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="text-content">
-                                <h4>Aliquam mollis lacus</h4>
-                                <span>Suspendisse</span>
-                                <p>#7 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
-                            </div>
                         </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_1.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Mauris lacinia pretium</h4>
-                                <span>Vestibulum</span>
-                                <p>#8 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="image">
-                                <img src="img/featured_3.jpg" alt="">
-                                <div class="featured-button button">
-                                    <a href="#projects">Continue Reading</a>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h4>Proin sit amet fringilla erat</h4>
-                                <span>Convallis</span>
-                                <p>#9 Suspendisse suscipit nulla sed nisl fermentum, auctor suscipit nunc rhoncus. Proin faucibus metus diam, nec hendrerit purus pharetra in.</p>
-                            </div>
-                        </div> -->
                     </div>
+            </section>
+            <section id="pubs" class="content-section">
+                <div class="section-heading">
+                    <h1>Recent<br><em>Publications</em></h1>
+                    <p>Highlighting recently published work in peer-reviewed journals.</p>
+                </div>
+                <div class="section-content">
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th style="width:40%"> </th>
+                                <th style="width:30%"> </th>
+                                <th> </th>
+                                <th style="width:20%"> </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
                 </div>
             </section>
             <section id="contact" class="content-section">
@@ -314,7 +257,8 @@ https://templatemo.com/tm-518-sentra
                             <a href="https://github.com/kpgund"><i class="fa fa-github fa-5x"></i></a>
                             <a href="https://twitter.com/kpgund"><i class="fa fa-twitter fa-5x"></i></a>
                             <a href="https://scholar.google.com/citations?user=C-XyyTYAAAAJ&hl=en&oi=ao"><i class="fa fa-google fa-5x"></i></a>
-                            <a href="mailto:kpgund@psu.edu"><i class="fa fa-envelope-square fa-5x"></i></a>    
+                            <a href="mailto:kpgund@psu.edu"><i class="fa fa-envelope-square fa-5x"></i></a>   
+                            <a href="snake.html"><i class="fa fa-random fa-5x"></i></a>    
                         </div>
                      </div>
                     
@@ -405,6 +349,28 @@ https://templatemo.com/tm-518-sentra
             
             lastScrollTop = st;
         }
+    </script>
+
+    <script>
+        Papa.parse("data.csv", {
+            download: true,
+            dynamicTyping: true,
+            header: true,
+            skipEmptyLines: true,
+            complete: function (results) {
+                const tableBody = document.getElementById("table-body");
+                results.data.forEach((row) => {
+                    const author = row.Author;
+                    const title = row.Title;
+					const year = row.Year;
+					const journal = row.Journal;
+                    const link = row.Link;
+                    const newRow = document.createElement("tr");
+                    newRow.innerHTML = `<td>${title}</td><td>${author}</td><td>${year}</td><td>${journal}</td>`;
+                    tableBody.appendChild(newRow);
+                });
+            },
+        });
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>

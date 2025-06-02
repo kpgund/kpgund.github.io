@@ -16,6 +16,10 @@ p {
   line-height: 24px;
 }
 
+a:hover i {
+  transform: scale(1.5);
+}
+
 .page-content {
   width: 77.5%;
   float: right;
@@ -44,7 +48,7 @@ p {
 
 .section-heading h1 {
   margin-top: 0px;
-  font-size: 32px;
+  font-size: 48px;
   color: #232323;
   display: inline-block;
   margin-right: 50px;
@@ -63,6 +67,12 @@ p {
   color: #343434;
   position: absolute;
   top: 12.5px;
+}
+
+.section-heading p em {
+  font-style: normal;
+  font-weight: 500;
+  color: #457e9a;
 }
 
 .white-button a {
@@ -470,6 +480,139 @@ header {
 
 .Modern-Slider {background:transparent;}
 
+/* Custom styles for featured research slider */
+.research-slider {
+  background:transparent;  
+  /* background-color: #f8f8f8; */
+    /* padding: 20px 0; */
+}
+
+.research-slider .Modern-Slider .info {
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 60px;
+    right: 40%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: inline-block;
+    max-width: 55%;
+}
+
+.research-slider .Modern-Slider .info h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 42px;
+    color: #fafafa;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.research-slider .Modern-Slider .info p {
+    font-size: 20px;
+    color: #f1efef;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.research-slider .Modern-Slider .item .image {
+    width: 100%;
+    height: 60vh;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+}
+
+/* Background images for research items */
+.research-slider .Modern-Slider .research-item-1 .image {
+    background-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.699) 60%,
+      rgba(0,0,0,.2) 0%
+      /* transparent 60% */
+    ), 
+    url(../img/featured_1_cropped.jpeg);
+  }
+/*  */
+.research-slider .Modern-Slider .research-item-2 .image {
+    background-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.699) 60%,
+      rgba(0,0,0,.2) 0%
+      /* transparent 60% */
+    ), 
+    url(../img/featured_2.jpg);
+}
+
+.research-slider .Modern-Slider .research-item-3 .image {
+    background-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.699) 60%,
+      rgba(0,0,0,.2) 0%
+      /* transparent 60% */
+    ), 
+    url(../img/featured_3.JPG);
+}
+
+.research-slider .Modern-Slider .research-item-4 .image {
+    background-image: 
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.699) 60%,
+      rgba(0,0,0,.2) 0%
+      /* transparent 60% */
+    ), 
+    url(../img/featured_4.jpg);
+}
+
+/* Author styling */
+.research-slider .Modern-Slider .info .author {
+    font-size: 24px;
+    color: #5bbaea;
+    font-weight: 800;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .research-slider .Modern-Slider .info {
+        text-align: center;
+        left: 30px;
+        right: 30px;
+        max-width: none;
+        padding: 20px;
+        background-color: rgba(0,0,0,.2);
+        border-radius: 10px;
+    }
+    
+    .research-slider .Modern-Slider .info h1 {
+        font-size: 28px;
+    }
+    
+    .research-slider .Modern-Slider .info p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .research-slider .Modern-Slider .info {
+        left: 40px;
+        right: 30%;
+        max-width: 65%;
+    }
+    
+    .research-slider .Modern-Slider .info h1 {
+        font-size: 32px;
+    }
+}
 /* ==== Slick Slider Css Ruls === */
 .slick-slider{
   position:relative;
@@ -759,13 +902,13 @@ header {
 
 /* Blog Style */
 
-#blog {
+#pubs {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#pubs .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -775,7 +918,7 @@ header {
   border-bottom: 10px solid #457e9a;
 }
 
-#blog .tabs li {
+#pubs .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -784,7 +927,7 @@ header {
   padding: 0;
 }
 
-#blog .tabs a {
+#pubs .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -797,16 +940,16 @@ header {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#pubs .tabs a:hover {
   color: #457e9a;
 }
 
 
-#blog .tabs .active:hover {
+#pubs .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#pubs .tabs .active {
   background-color: #457e9a;
   color: #fff;
 }
@@ -822,13 +965,13 @@ header {
   clear:both;
 }
 
-#blog .tabgroup ul {
+#pubs .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#pubs .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -836,23 +979,23 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#pubs .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#pubs .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#pubs .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#pubs .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -862,7 +1005,7 @@ header {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#pubs .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -871,13 +1014,38 @@ header {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#pubs .item .text-content .accent-button {
   margin-top: 25px;
 }
 
+/* TABLE STYLE */
+table {
+  font-size:15px;
+  border-collapse: collapse;
+  border-spacing: 75px 0;
+}
 
+td {
+  padding: 10px 0;
+  /* background: #ccc; /* Remove this line to disable grey background color */
+  vertical-align: center;
+}
 
+th {
+  display: none;
+  border-bottom: 2px solid #ddd;
+  height: 0px;
+  text-align: center;
+}
 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #457e9a;
+  color: #ffffff
+}
 /* Contact Style */
 
 #contact {
