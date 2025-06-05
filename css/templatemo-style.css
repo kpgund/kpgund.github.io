@@ -713,13 +713,14 @@ header {
 
 #featured .item .image {
   position: relative;
+  height: 800px; /* Set the height you want */
+  overflow: hidden;
 }
 
 #featured .item .image img {
   width: 100%;
-  overflow: hidden;
-  height: 2000px;
-  object-fit: cover; /* add this to maintain aspect ratio */
+  height: 100%;
+  object-fit: cover;
 }
 
 #featured .item .image .featured-button a {
